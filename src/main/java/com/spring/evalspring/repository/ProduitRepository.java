@@ -10,6 +10,8 @@ import java.util.Optional;
 @Repository
 public interface ProduitRepository extends CrudRepository<Produit, Integer> {
     ProduitService findBy(String nom, Double prix);
+
+    boolean isExist(Produit produit);
 }
 
 
