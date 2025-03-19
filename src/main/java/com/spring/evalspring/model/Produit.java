@@ -20,9 +20,9 @@ public class Produit {
     @Min(value = 1 , message = "Le prix du produit doit être supérieur à zéro")
     private Double prix;
 
-   /* @ManyToOne
+   @ManyToOne
     @JoinColumn(name = "categorie_id")
-    private Categorie categorie;*/
+    private Categorie categorie;
 
     public Produit() {
     }
@@ -56,10 +56,10 @@ public class Produit {
         this.prix = prix;
     }
 
-   /* public Categorie getCategorie() {
+    public Categorie getCategorie() {
         return categorie;
     }
     public void setCategorie(Categorie categorie) {
         this.categorie = categorie;
-    }*/
+    }
 }
