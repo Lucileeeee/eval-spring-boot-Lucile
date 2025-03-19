@@ -18,7 +18,7 @@ public class Produit {
     @Column(name = "prix", nullable = false)
     @NotBlank(message = "Le nom du produit doit être renseigné")
     @Min(value = 1 , message = "Le prix du produit doit être supérieur à zéro")
-    private Double price;
+    private Double prix;
 
    /* @ManyToOne
     @JoinColumn(name = "categorie_id")
@@ -27,9 +27,9 @@ public class Produit {
     public Produit() {
     }
 
-    public Produit(String nom, Double price) {
+    public Produit(String nom, Double prix) {
         this.nom = nom;
-        this.price = price;
+        this.prix = prix;
     }
 
     public int getId() {
@@ -48,12 +48,12 @@ public class Produit {
     }
 
 
-    public Double getPrice() {
-        return price;
+    public Double getPrix() {
+        return prix;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
+    public void setPrice(Double prix) {
+        this.prix = prix;
     }
 
    /* public Categorie getCategorie() {
