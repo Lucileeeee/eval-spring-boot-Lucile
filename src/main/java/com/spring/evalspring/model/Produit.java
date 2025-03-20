@@ -31,6 +31,11 @@ public class Produit {
         this.nom = nom;
         this.prix = prix;
     }
+     public Produit(String nom, Double prix, Categorie categorie) {
+        this.nom = nom;
+        this.prix = prix;
+        this.categorie = categorie;
+    }
 
     public int getId() {
         return id;
