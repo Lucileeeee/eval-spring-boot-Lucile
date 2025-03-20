@@ -27,9 +27,10 @@ public class Produit {
     public Produit() {
     }
 
-    public Produit(String nom, Double prix) {
+    public Produit(String nom, Double prix, Categorie categorie) {
         this.nom = nom;
         this.prix = prix;
+        this.categorie = categorie;
     }
 
     public int getId() {
