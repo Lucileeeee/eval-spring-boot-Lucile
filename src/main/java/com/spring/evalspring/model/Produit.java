@@ -64,6 +64,6 @@ public class Produit {
         this.categorie = categorie;
     }
 
-    public Produit orElseThrow(Object o) {
-    }
+   // public Produit orElseThrow(Object o) {
+    //}
 }
