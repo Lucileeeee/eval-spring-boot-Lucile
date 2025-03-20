@@ -53,7 +53,7 @@ public class Produit {
         return prix;
     }
 
-    public void setPrice(Double prix) {
+    public void setPrix(Double prix) {
         this.prix = prix;
     }
 
